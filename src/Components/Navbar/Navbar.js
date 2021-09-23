@@ -22,32 +22,19 @@ const NavBar = () => {
   return (
     <div >
       <Navbar className="navbar" dark expand="md" >
-        <NavbarBrand center href="/product" className="navbar__navbarBrand">SIB-kart</NavbarBrand>
+        <NavbarBrand href="/product" className="navbar__navbarBrand">SIB-kart</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="mr-auto container-fluid" navbar>
           <NavItem>
               <NavLink href="/product">Products</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/checkout">Checkout</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="/contact">Contact us</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Filter
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  1
-                </DropdownItem>
-                <DropdownItem>
-                  2
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem className="navbar__cart ms-auto" >
+              <NavLink  href="/checkout">cart</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
