@@ -11,9 +11,9 @@ import ProductList from "./ProductList/ProductList";
 
 const Products = () => {
     return (
-        <div className="container">
-            <Navbar color="light" light expand="md" >
-                <Nav className="mr-auto" navbar>
+        <div >
+            <Navbar color="light"  light expand="md" >
+                <Nav className="mr-auto" className="product__navbar" navbar>
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
                             Ram
@@ -58,6 +58,7 @@ const Products = () => {
                     </UncontrolledDropdown>
                 </Nav>
             </Navbar>
+            <br/>
             <ProductList />
         </div>
     );

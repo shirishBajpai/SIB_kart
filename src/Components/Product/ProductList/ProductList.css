@@ -1,0 +1,18 @@
+.spinner{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+}
+.productList{
+    margin:20px;
+}
+
+.ProductList_heading{
+    font-size: 20px;
+}
+.ProductList_details{
+    font-size: 16px;
+}
+.ProductList_cost{
+    font-size: 30px;
+}
