@@ -8,7 +8,9 @@ import Checkout from "../Checkout/Checkout";
 import Contact from "../Contact/Contact";
 import Products from "../Product/Product";
 
+
 const Home = () => {
+
     return (
         <Router>
             <div>

@@ -1,46 +1,33 @@
-import { Row, Col, Spinner } from "reactstrap";
+import { Row, Col, Spinner, Button } from "reactstrap";
 import { useState, useEffect } from "react";
 import "./ProductList.css";
 
-function ProductList() {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
+const ProductList = (props)=> {
+    
+    console.log(props,"productList");
 
-    useEffect(() => {
-        fetch("http://localhost:3002/users")
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    console.log(result.employee);
-                    setItems(result.employee);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            )
-    }, [])
-
-    if (error) {
-        return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
+    if (props.error) {
+        return <div>Error: {props.error.message}</div>;
+    } else if (!props.isLoaded) {
         return <div className="spinner">
-      <Spinner color="danger" />
+            <Spinner color="danger" />
         </div>;
     } else {
         return (
             <div>
-                {items.map((user) => (
+                {props.items.map((user) => (
                     <div className="container">
                         <Row className="productList">
                             <div key={user.id}></div>
-                            <Col><img src="phone1.png" width="150" height="225" /></Col>
-                            <Col><p className="ProductList_heading">{user.name}</p>
-                                <p className="ProductList_details">{user.brand}<br />{user.RAM}<br />{user.ROM}<br />{user.Expandable}</p>
+                            <Col><img src={`${user.image}`} width="150" height="300" /></Col>
+                            <Col><br/><br/><p className="ProductList__heading">{user.name}</p>
+                                <p className="ProductList__details">{user.brand}<br />{user.RAM} GB RAM | {user.ROM}
+                                    GB ROM | Expandable upto {user.Expandable} GB<br/> {user.display} Display </p>
                             </Col>
-                            <Col><p className="ProductList_cost">{user.Cost}</p></Col>
+                            <Col><br/><br/><p className="ProductList__cost">&#8377; {user.Cost}</p>
+                            <Button className="productList__button" color="success">Purchase Now</Button><br/>
+                            <Button className="productList__button" color="warning" >Add to cart </Button>
+                            </Col>
                         </Row>
                     </div>
                 ))}

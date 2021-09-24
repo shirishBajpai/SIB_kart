@@ -7,12 +7,17 @@
     margin:20px;
 }
 
-.ProductList_heading{
+.ProductList__heading{
     font-size: 20px;
 }
-.ProductList_details{
+.ProductList__details{
     font-size: 16px;
 }
-.ProductList_cost{
+.ProductList__cost{
     font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.productList__button{
+    margin: 5px;
+}
+

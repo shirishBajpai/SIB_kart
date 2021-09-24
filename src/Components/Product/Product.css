@@ -7,3 +7,7 @@
 .product__navbar{
     margin-left: 50px;
 }
+
+.product__navbar__dropdownItem{
+    font-size: 12px;
+}
