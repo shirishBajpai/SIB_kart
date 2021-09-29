@@ -7,10 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import './Navbar.css';
 
@@ -32,10 +28,8 @@ const NavBar = () => {
             <NavItem>
               <NavLink href="/contact">Contact us</NavLink>
             </NavItem>
-            <NavItem className="navbar__cart ms-auto" >
-              <NavLink  href="/checkout">cart</NavLink>
-            </NavItem>
           </Nav>
+          
         </Collapse>
       </Navbar>
     </div>
