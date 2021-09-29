@@ -7,16 +7,11 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import './Navbar.css';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartItems, setCartItems] = useState(0);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -33,11 +28,8 @@ const NavBar = () => {
             <NavItem>
               <NavLink href="/contact">Contact us</NavLink>
             </NavItem>
-            <NavItem className="navbar__cart ms-auto" >
-              <NavLink  href="/checkout"><i className="fa fa-shopping-cart"></i> 
-              <span className="navbar__cart__state">{cartItems}&nbsp;</span>cart</NavLink>
-            </NavItem>
           </Nav>
+          
         </Collapse>
       </Navbar>
     </div>

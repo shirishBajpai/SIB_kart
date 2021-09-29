@@ -11,3 +11,34 @@
 .product__navbar__dropdownItem{
     font-size: 12px;
 }
+
+.product__navbar__productNo{
+    margin-top: 9px;
+    font-size: 14px;
+}
+
+.product__navbar__clearFilters{
+    margin-top: 9px;
+    cursor: pointer;
+    color: rgb(95, 95, 95);
+    /* font-size: 14px; */
+}
+.product__navbar__clearFilters:hover{
+    margin-top: 9px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline;
+    transition: all 3s ease-in-out; */
+    /* font-size: 14px; */
+}
+.navbar__cart{
+    font-weight: bold;
+    display: inline;
+}
+.fa-shopping-cart{
+    margin: 5px;
+    color: rgb(95, 95, 95);
+}
+.navbar__cart__state{
+    color: rgb(95, 95, 95);
+}

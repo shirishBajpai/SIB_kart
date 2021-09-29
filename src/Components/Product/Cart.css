@@ -1,0 +1,13 @@
+.modal__button{
+    cursor: pointer;
+}
+
+.modal__header{
+    display: inline-block;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.modal__body__name{
+    margin-top: 200px;
+}

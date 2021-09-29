@@ -1,0 +1,22 @@
+.contact__heading{
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(110, 108, 108);
+}
+
+.contact__text{
+    text-align: justify;
+}
+
+.contact_input{
+    color: rgb(48, 47, 47);
+    font-family:sans-serif;
+    margin: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.contact_button{
+    margin-left: 100px;
+    width: 100%;
+}

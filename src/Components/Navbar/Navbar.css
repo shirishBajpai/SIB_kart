@@ -4,13 +4,3 @@
 .navbar__navbarBrand{
     margin-left: 20px;
 }
-.navbar__cart{
-    font-weight: bold;
-}
-.fa-shopping-cart{
-    margin: 5px;
-    color: rgb(240, 240, 187);
-}
-.navbar__cart__state{
-    color: rgb(240, 240, 187);
-}
